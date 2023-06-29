@@ -18,7 +18,7 @@ plt.xlabel("Anos")
 
 plt.savefig("imagens/1_pib.png")
 plt.gca().clear()
-# plt.show() 
+# plt.show()
 
 filmes = ["Annie Hall", "Ben-Hur", "Casablanca", "Gandhi", "West Side Story"]
 num_oscars = [5, 11, 3, 8, 10]
@@ -39,16 +39,16 @@ plt.gca().clear()
 # plt.show()
 
 from collections import Counter
+
 notas = [83, 95, 91, 87, 70, 0, 85, 82, 100, 67, 73, 77, 0]
 
 # Agrupe as notas por decil, mas coloque o 100 com o 90.
 
-histograma = Counter(min(nota // 10*10, 90) for nota in notas)
+histograma = Counter(min(nota // 10 * 10, 90) for nota in notas)
 
-plt.bar([x + 5 for x in histograma.keys()], 
-        histograma.values(), 
-        10, 
-        edgecolor=(0, 0, 0))
+plt.bar(
+    [x + 5 for x in histograma.keys()], histograma.values(), 10, edgecolor=(0, 0, 0)
+)
 
 plt.axis([-5, 105, 0, 5])
 
@@ -60,3 +60,5 @@ plt.title("Distribuição de notas do Exame 1")
 
 plt.savefig("imagens/3_estudantes.png")
 plt.gca().clear()
+
+

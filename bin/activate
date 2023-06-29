@@ -38,11 +38,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\carlo\OneDrive\Área de Trabalho\Data Science do Zero Noções Fundamentais com Python"
+VIRTUAL_ENV="/home/carloseduardo/Área de Trabalho/Data_Science_do_Zero"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
-PATH="$VIRTUAL_ENV/Scripts:$PATH"
+PATH="$VIRTUAL_ENV/bin:$PATH"
 export PATH
 
 # unset PYTHONHOME if set
@@ -55,9 +55,9 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    PS1="(Data Science do Zero Noções Fundamentais com Python) ${PS1:-}"
+    PS1="(Data_Science_do_Zero) ${PS1:-}"
     export PS1
-    VIRTUAL_ENV_PROMPT="(Data Science do Zero Noções Fundamentais com Python) "
+    VIRTUAL_ENV_PROMPT="(Data_Science_do_Zero) "
     export VIRTUAL_ENV_PROMPT
 fi
 
