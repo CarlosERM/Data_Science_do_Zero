@@ -414,6 +414,7 @@ for i in natural_numbers():
 
 names = ["Alice", "Bob", "Charlie", "Debbie"]
 
+# Enumera as coisas. Conta. [João, Maria, Fernando] => [(0, Joao), (1, Maria), (2, Fernando)]
 for i, name in enumerate(names):
     print(f"nome {i} é {name}")
 
